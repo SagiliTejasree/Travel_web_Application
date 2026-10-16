@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f8f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #087f8c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #164e63;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Sections */
+section {
+    padding: 35px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #087f8c;
+    margin-bottom: 25px;
+}
+
+/* Destinations and Packages */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: white;
+    padding: 25px;
+    flex: 1;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #00000015;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px #00000025;
+}
+
+.item h3 {
+    color: #087f8c;
+    margin-bottom: 12px;
+}
+
+.item p {
+    font-size: 17px;
+}
+
+/* Booking Form */
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline-color: #087f8c;
+}
+
+/* Submit Button */
+button {
+    background-color: #087f8c;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #164e63;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #dff3ef;
+}
+
+#contact p {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px
